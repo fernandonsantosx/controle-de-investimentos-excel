@@ -1,10 +1,9 @@
 # 📊 Controle de Investimentos & Simulador Financeiro em Excel
-### Desafio de Projeto — Digital Innovation One (DIO)
+### Modelagem Financeira, Projeção Patrimonial & Efeito Bola de Neve
 
 <div align="center">
 
 ![Excel](https://img.shields.io/badge/Microsoft_Excel-Controle_de_Investimentos.xlsx-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![DIO](https://img.shields.io/badge/DIO-Desafio_de_Projeto-002B49?style=for-the-badge&logo=dio&logoColor=white)
 ![Finanças](https://img.shields.io/badge/Investimentos-Multi--Ativos-F7931A?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 ![Licença](https://img.shields.io/badge/Licença-MIT-blue?style=for-the-badge)
@@ -15,38 +14,37 @@
 
 ## 📌 Sumário
 - [📖 Sobre o Projeto](#-sobre-o-projeto)
-- [🎯 Objetivos e Alinhamento com a DIO](#-objetivos-e-alinhamento-com-a-dio)
+- [🎯 Principais Recursos](#-principais-recursos)
 - [⚙️ Arquitetura da Planilha `Controle de Investimentos.xlsx`](#️-arquitetura-da-planilha-controle-de-investimentosxlsx)
 - [🧮 Modelagem Matemática e Fórmulas Utilizadas](#-modelagem-matemática-e-fórmulas-utilizadas)
 - [❄️ O Conceito do Efeito Bola de Neve (Magic Number)](#️-o-conceito-do-efeito-bola-de-neve-magic-number)
-- [💡 Sugestões de Alterações e Correções para Alinhamento](#-sugestões-de-alterações-e-correções-para-alinhamento)
+- [💡 Sugestões de Expansão e Boas Práticas](#-sugestões-de-expansão-e-boas-práticas)
 - [📁 Estrutura do Repositório](#-estrutura-do-repositório)
 - [🚀 Como Utilizar e Testar a Planilha](#-como-utilizar-e-testar-a-planilha)
-- [🌐 Como Publicar no GitHub e Entregar na Plataforma DIO](#-como-publicar-no-github-e-entregar-na-plataforma-dio)
 - [📜 Licença](#-licença)
 
 ---
 
 ## 📖 Sobre o Projeto
 
-Este repositório contém uma solução completa e versátil voltada para **Controle de Investimentos e Simulação Financeira Multiativos (Fundos Imobiliários, Ações de Dividendos e Renda Fixa com Aportes)**, atendendo e expandindo os objetivos do desafio prático da **Digital Innovation One (DIO)**. 
+Este repositório contém uma solução completa e versátil voltada para **Controle de Investimentos e Simulação Financeira Multiativos**, aplicável a carteiras de Fundos Imobiliários (FIIs), Ações de Dividendos, Renda Fixa com aportes regulares e Tesouro Direto.
 
 O projeto tem como núcleo o arquivo **[`Controle de Investimentos.xlsx`](Controle de Investimentos.xlsx)**, uma planilha interativa, elegante e intuitiva desenvolvida para automatizar cálculos de juros compostos, projeção de patrimônio, acúmulo de proventos e monitoramento do ponto de virada financeira conhecido como **Efeito Bola de Neve** (*Magic Number*).
 
-A ferramenta foi projetada com arquitetura abrangente, permitindo que qualquer investidor consiga planejar tanto ativos imobiliários (FIIs) quanto qualquer carteira geradora de renda passiva:
+A ferramenta foi projetada com arquitetura abrangente, permitindo que qualquer investidor consiga planejar com clareza:
 1. Quanto seu patrimônio crescerá ao longo dos anos com aportes constantes e reinvestimento dos proventos.
 2. Qual será sua renda passiva mensal estimada em dividendos e juros.
-3. Em que momento os rendimentos gerados pelas cotas e títulos passarão a cobrir e superar o próprio aporte mensal.
+3. Em que momento os rendimentos gerados pelos investimentos passarão a cobrir e superar o próprio aporte mensal.
 
 ---
 
-## 🎯 Objetivos e Alinhamento com a DIO
+## 🎯 Principais Recursos
 
 - [x] **Construção de Ferramenta Financeira Prática:** Aplicação de funções financeiras essenciais do Excel (`VF` / `FV`, `SE` / `IF`, fórmulas dinâmicas).
 - [x] **Automatização de Cálculos Complexos:** Total aportado, valor futuro projetado, lucro acumulado em juros e estimativa de dividendos mensais e anuais.
 - [x] **Visualização com Tabela e Gráficos:** Tabela progressiva mês a mês e gráfico de linhas destacando o distanciamento exponencial entre o capital aportado e o patrimônio total.
 - [x] **Interface Executiva e Intuitiva:** Organização em blocos visuais claros (Inputs $\rightarrow$ Cards de KPIs $\rightarrow$ Tabela de Projeção $\rightarrow$ Gráfico).
-- [x] **Documentação Completa de Engenharia:** Guia técnico com equivalências de fórmulas em Português e Inglês e boas práticas de versionamento no GitHub.
+- [x] **Documentação Técnica Completa:** Guia com equivalências de fórmulas em Português e Inglês e fundamentos de modelagem financeira.
 
 ---
 
@@ -88,11 +86,11 @@ Acompanhamento detalhado da evolução patrimonial ao longo dos primeiros 30 mes
 - **Aporte:** Depósito mensal recorrente de R$ 1.000,00.
 - **Rendimento:** Ganho percentual sobre o saldo em conta.
 - **Saldo Final Acumulado:** Soma de Saldo + Aporte + Rendimento.
-- **Total Aportado:** Montante do bolso do investidor.
-- **Dividendos Estimados:** Geração de caixa mensal correspondente ao saldo atingido.
+- **Total Aportado:** Montante desembolsado do bolso do investidor.
+- **Dividendos Estimados:** Geração de caixa mensal correspondente ao saldo acumulado.
 
 ### 4. Gráfico Dinâmico de Evolução Patrimonial
-Gráfico de linhas intitulado *"Evolução Patrimonial: Total Aportado vs. Saldo Acumulado"*, demonstrando visualmente o efeito da aceleração dos juros compostos.
+Gráfico de linhas intitulado *"Evolução Patrimonial: Total Aportado vs. Saldo Acumulado"*, demonstrando visualmente o efeito da aceleração dos juros compostos no decorrer do tempo.
 
 ---
 
@@ -117,38 +115,36 @@ A planilha foi construída com fórmulas compatíveis com o Excel internacional 
 
 ## ❄️ O Conceito do Efeito Bola de Neve (Magic Number)
 
-No mercado de Fundos Imobiliários, o **Efeito Bola de Neve** (ou *Número Mágico*) representa o divisor de águas na vida do investidor:
+No universo dos investimentos geradores de renda, o **Efeito Bola de Neve** (ou *Número Mágico*) representa o divisor de águas na vida financeira:
 
-$$\text{Dividendos Mensais Recebidos} \ge \text{Aporte Mensal Regular}$$
+$$\text{Proventos Mensais Recebidos} \ge \text{Aporte Mensal Regular}$$
 
 Quando essa condição é atingida:
-1. O investidor não precisa mais tirar recursos exclusivamente do próprio salário para continuar investindo.
-2. A carteira torna-se **autossustentável**: o próprio fluxo de proventos compra novas cotas todos os meses.
-3. No modelo da planilha, com aportes de R$ 1.000/mês e DY de 0,60% a.m., o efeito bola de neve é atingido plenamente antes dos 10 anos, gerando **R$ 1.326,08/mês** (cobertura de **132,6%**)!
+1. O investidor não precisa mais depender exclusivamente do próprio salário para continuar investindo.
+2. A carteira torna-se **autossustentável**: o próprio fluxo de dividendos reinvestido compra novas cotas e ativos todos os meses.
+3. No modelo da planilha, com aportes de R$ 1.000/mês e rendimento de proventos de 0,60% a.m., o efeito bola de neve é atingido plenamente antes dos 10 anos, gerando **R$ 1.326,08/mês** (cobertura de **132,6%**)!
 
 ---
 
-## 💡 Sugestões de Alterações e Correções para Alinhamento
+## 💡 Sugestões de Expansão e Boas Práticas
 
-Para tornar a planilha ainda mais simples, intuitiva e 100% alinhada à ementa do Desafio da DIO, sugerem-se as seguintes melhorias:
+Para enriquecer ainda mais a ferramenta em estudos futuros, sugerem-se as seguintes possibilidades de expansão:
 
-### 1. Harmonização do Prazo (10 Anos vs Tabela de 30 Meses)
-- **Cenário Atual:** O input define 10 anos (120 meses), mas a tabela apresenta apenas os primeiros 30 meses.
-- **Sugestão:** Adicionar uma pequena tabela lateral com **Marcos de Cenários** para 1 ano (12m), 2 anos (24m), 5 anos (60m) e 10 anos (120m). Dessa forma, a planilha continua leve e intuitiva, mas o usuário enxerga a correspondência exata com o prazo final!
+### 1. Harmonização do Prazo com Marcos de Cenários
+- **Cenário Atual:** O input define 10 anos (120 meses), enquanto a tabela apresenta o detalhamento dos primeiros 30 meses.
+- **Possibilidade:** Adicionar uma pequena tabela lateral com **Marcos de Cenários** para 1 ano (12m), 2 anos (24m), 5 anos (60m) e 10 anos (120m). Dessa forma, a planilha permanece leve e intuitiva, oferecendo simultaneamente a visão detalhada de curto prazo e a visão macro de longo prazo.
 
-### 2. Módulo de Alocação por Tipo de FII (Requisito Temático da DIO)
-- **Cenário Atual:** O modelo calcula o retorno geral, mas não especifica em quais fundos imobiliários o aporte é distribuído.
-- **Sugestão:** Adicionar um pequeno bloco abaixo dos inputs com a distribuição recomendada do aporte mensal (`$C$7` = R$ 1.000,00):
-  - **FIIs de Tijolo (ex.: 40%):** R$ 400,00 (galpões logísticos, shoppings e lajes corporativas)
-  - **FIIs de Papel/Recebíveis (ex.: 35%):** R$ 350,00 (CRIs e títulos de crédito com juros atrativos)
-  - **FIIs Híbridos / FOFs (ex.: 15%):** R$ 150,00 (diversificação de gestão)
-  - **Desenvolvimento / Oportunidades (ex.: 10%):** R$ 100,00 (maior potencial de valorização)
+### 2. Módulo de Alocação por Classe de Ativos
+- Adicionar uma pequena seção para distribuição percentual do aporte mensal (`$C$7` = R$ 1.000,00) entre diferentes classes:
+  - **Fundos Imobiliários de Tijolo / Papel:** R$ 500,00 (50%)
+  - **Ações Pagadoras de Dividendos:** R$ 300,00 (30%)
+  - **Renda Fixa / Tesouro Direto:** R$ 200,00 (20%)
 
 ### 3. Nomes Definidos no Excel (Name Manager)
-- **Sugestão:** Em vez de fórmulas com `$C$6` e `$C$7`, nomear as células para `Aporte_Inicial` e `Aporte_Mensal`. Isso facilita a compreensão por qualquer recrutador ou avaliador que abrir a planilha.
+- Nomear células estratégicas como `Aporte_Inicial` e `Aporte_Mensal` para que as fórmulas fiquem autodocumentadas e ainda mais legíveis para novos usuários.
 
-### 4. Inclusão de Fórmulas Bilíngues
-- Como alguns computadores utilizam a versão em português do Excel (onde `FV` e `IF` geram erro `#NOME?`), manter o guia com `VF` e `SE` documentado no README garante total acessibilidade.
+### 4. Fórmulas Bilíngues
+- Manter o guia com equivalências entre `VF` / `FV` e `SE` / `IF` para assegurar que a planilha funcione sem erros em qualquer versão de idioma do Microsoft Excel.
 
 ---
 
@@ -169,37 +165,11 @@ controle-de-investimentos/
 
 1. **Abra o arquivo:**
    - Abra [`Controle de Investimentos.xlsx`](Controle de Investimentos.xlsx) no Microsoft Excel, Excel Online ou Google Planilhas.
-2. **Experimente novos cenários alterando as células em amarelo/verde:**
+2. **Experimente novos cenários alterando as células em destaque:**
    - Mude o **Aporte Inicial** (`C6`) para R$ 1.000,00 ou R$ 10.000,00.
-   - Ajuste o **Aporte Mensal** (`C7`) de acordo com sua realidade.
+   - Ajuste o **Aporte Mensal** (`C7`) de acordo com sua capacidade de poupança.
    - Modifique o **Prazo** (`C8`) para ver o impacto no patrimônio final e nos dividendos.
-   - Veja o indicador **Efeito Bola de Neve** mudar de status automaticamente conforme a renda supera o aporte!
-
----
-
-## 🌐 Como Publicar no GitHub e Entregar na Plataforma DIO
-
-### Passo 1: Criar o Repositório no GitHub
-1. Acesse o [GitHub](https://github.com/) e crie um novo repositório público com o nome: `controle-de-investimentos-excel`.
-2. Não marque para criar README automático (pois já temos um arquivo completo).
-
-### Passo 2: Fazer o Upload dos Arquivos
-1. Na página do repositório no GitHub, clique em **`uploading an existing file`**.
-2. Selecione ou arraste os seguintes arquivos desta pasta:
-   - `Controle de Investimentos.xlsx`
-   - `README.md`
-   - `FORMULAS_E_METRICAS.md`
-   - `.gitignore`
-3. Mensagem do commit: `feat: entrega do projeto de controle de investimentos e simulador financeiro`
-4. Clique em **Commit changes**.
-
-### Passo 3: Enviar a Entrega na DIO
-1. Copie o link do repositório no GitHub.
-2. Acesse a plataforma da DIO, clique em **Entregar Projeto** e envie o link acompanhado de uma descrição destacando:
-   - Planilha executiva com cálculo de Valor Futuro (`VF`/`FV`) e juros compostos;
-   - Indicador dinâmico do **Efeito Bola de Neve** e cobertura de aporte mensal;
-   - Tabela de projeção progressiva mês a mês e gráfico visual;
-   - Documentação de engenharia e sugestões de aprimoramento.
+   - Observe o indicador **Efeito Bola de Neve** mudar de status automaticamente conforme a renda supera o aporte!
 
 ---
 
@@ -211,7 +181,6 @@ Distribuído sob a licença [MIT](https://opensource.org/licenses/MIT). Sinta-se
 
 <div align="center">
 
-Desenvolvido para o Desafio de Projeto da **DIO** 🚀  
-*Construindo patrimônio com inteligência e disciplina financeira.*
+*Construindo patrimônio com inteligência, método e disciplina financeira.* 📈
 
 </div>
